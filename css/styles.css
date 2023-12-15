@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#body {
+    background-color: #000000;
+    background-image: url('./img/bg6.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
+}
+.nav-link {
+    color: whitesmoke !important;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px whitesmoke;
+    font-size: 25px !important;
+    transition: all .5s;
+}
+.nav-link:hover {
+    color: #9A0680 !important;
+    -webkit-text-fill-color: #9A0680;
+    -webkit-text-stroke: 0px #9A0680 !important;
+}
+canvas {
+    display:block;
+    margin:auto;
+    background: 0;
+}
+@media (max-width: 750px) {
+    canvas {
+        width: 100%;
+    }
+}
+main {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 14%;
+}
+footer .subtitle {
+    color: whitesmoke;
+    -webkit-text-fill-color: grey;
+    -webkit-text-stroke: 1px whitesmoke;
+    text-decoration: none;
+    font-size: 35px;
+}
+footer p {
+    color: #f5f5f5;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: 700;
+}
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+#gallery h1 {
+    font-size: 60px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 2px #000000;
+}
+#gallery img {
+    width: 100%;
+}
+#gallery img:hover {
+    border: 5px solid transparent;
+}
+@media (max-width: 750px){
+    #body {
+        overflow: auto;
+    }
+    main {
+        margin-top: 60%;
+        margin-bottom: 80%;
+    }
+}
+
+/*CAROUSEL*/
+.carousel__contenedor {
+    position: relative;
+}
+.carousel__anterior, .carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #1dffb9;
+}
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #515d8a;
+    opacity: .2;
+}
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+#data {
+    background-color: #1b2137;
+}
+#data h2 {
+    font-size: 30px;
+    color: #F5F5F5;
+    position: absolute;
+    margin-left: 5px;
+}
